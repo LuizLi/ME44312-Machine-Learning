@@ -1,4 +1,4 @@
-# 導入必要套件
+
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -57,7 +57,7 @@ sns.scatterplot(x=y_test, y=y_pred, alpha=0.6)
 plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], 'r--', label="Perfect Prediction")
 plt.xlabel("True Time to Failure")
 plt.ylabel("Predicted Time to Failure")
-plt.title("Linear Regression: True vs Predicted TTF")
+plt.title("Linear Regression with Nonlinear Sensor Features and Categorical Features")
 plt.legend()
 plt.grid(True)
 plt.show()
